@@ -1,0 +1,44 @@
+<!-- <!DOCTYPE html>
+<html> // the root element 
+  <head> // the first child of html
+    <title>Basic I</title>
+  </head>
+  <body> the last child of html 
+    <h1>What language do you love?</h1> // the child of the body 
+    <p>I love HTML!</p> //the child of the body
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic II</title>
+  </head>
+  <body>
+    <table>  //child of the body
+      <thead> // the head of the table
+        <tr> //the rows of the table
+          <th>First Name</th> // the firs coolumns of the table 
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Password</th>
+        </tr>
+      </thead>
+      <tbody> // the body of the table 
+        <tr>
+          <td>Brendan</td> // the other columns 
+          <td>Stanton</td>
+          <td>brendanrocks@gmail.com</td>
+          <td>FakePassword123</td>
+        </tr>
+      </tbody>
+    </table> 
+    <h1>Here is a list of my favorite things:</h1>
+    <ul>
+      <li>Food</li>
+      <li>Bandwidth</li>
+      <li>Coffee</li>
+      <li>Beach</li>
+    </ul>
+  </body>
+</html>
