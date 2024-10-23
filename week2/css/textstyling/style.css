@@ -1,0 +1,26 @@
+body {
+    font-style: normal;
+}
+
+
+h1 {
+text-align: left;
+color: white;
+background-color: black;
+
+}
+h1 span {
+    color: aqua;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    background-color: blueviolet;
+}
+h3 {
+    text-align: end;
+    color: black;
+    text-decoration: underline;
+    background-color: aquamarine;
+}
