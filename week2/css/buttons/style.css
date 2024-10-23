@@ -1,0 +1,29 @@
+button {
+  border-radius: 0%;
+}
+
+.search {
+  height: 35px;
+  width: 100px;
+  border-radius: 40%;
+  background-color: hsl(0, 0%, 92%);
+  border-color: rgb(90, 196, 196);
+  color: rgb(90, 196, 196);
+}
+#plus {
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  color: white;
+  background-color: rgb(70, 202, 158);
+  border-color: rgb(70, 202, 158);
+}
+
+#create {
+  height: 40px;
+  width: 150px;
+  border-radius: 0%;
+  background-color: rgb(57, 57, 230);
+  color: white;
+  box-shadow: 1px 1px black;
+}
