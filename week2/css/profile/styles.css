@@ -1,0 +1,183 @@
+.nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    padding: 1rem 2rem;
+
+}
+
+.nav-links {
+
+    display: flex;
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 4px 6px;
+    align-items: center;
+}
+
+.nav-title {
+    color: white;
+    font-family: cursive;
+    margin: 0;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+}
+
+button {
+
+    background-color: rgb(75, 198, 247);
+    color: white;
+}
+
+.information {
+    display: inline-flex;
+    flex-direction: column;
+    border: 3px solid;
+    border-bottom: 3px solid;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-color: rgb(187, 187, 187)grey;
+
+}
+
+.shape {
+
+    background-color: rgb(85, 195, 239);
+    height: 120px;
+}
+
+h2 {
+    margin-top: 0%;
+}
+
+
+#user {
+    box-shadow: 4px 4px grey;
+    width: 100px;
+    border-radius: 50%;
+}
+
+u {
+
+    color: rgb(59, 185, 231);
+    text-decoration: underline;
+}
+
+
+
+.education {
+
+    border: 3px solid;
+    border-bottom: 3px solid;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-color: rgb(187, 187, 187)grey;
+    font-family: cursive;
+
+}
+
+.edu {
+
+    background-color: rgb(48, 48, 48);
+    color: white;
+    font-size: large;
+    font-family: cursive;
+
+
+}
+
+.requests {
+    flex-direction: column;
+    display: inline-block;
+    border: 3px solid;
+    border-bottom: 3px solid;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-color: rgb(187, 187, 187)grey;
+    font-family: cursive;
+
+
+}
+
+.req {
+
+    background-color: rgb(48, 48, 48);
+    color: white;
+    font-size: large;
+    font-family: cursive;
+
+}
+
+#deux {
+    background-color: grey;
+    border-radius: 50%;
+    margin: 4px;
+    align-items: center;
+}
+
+.img1 {
+
+    position: relative;
+
+}
+
+.img2 {
+
+    position: absolute;
+
+}
+
+img {
+
+    width: 30px;
+}
+
+.Connections {
+    flex-direction: column-reverse;
+    display: inline-block;
+    border: 3px solid;
+    border-bottom: 3px solid;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-color: rgb(187, 187, 187);
+    font-family: cursive;
+}
+
+.yours {
+
+
+    background-color: rgb(48, 48, 48);
+    color: white;
+    font-size: large;
+    font-family: cursive;
+
+
+}
+
+#cinq {
+    background-color: grey;
+    border-radius: 50%;
+    margin: 4px;
+    align-items: center;
+
+}
+
+.more {
+
+    border-top: 3px solid;
+    border-color: rgb(187, 187, 187);
+    text-decoration: underline;
+    color: rgb(59, 185, 231);
+
+}
