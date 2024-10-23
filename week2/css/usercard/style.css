@@ -1,0 +1,39 @@
+.information {
+  border: 3px grey;
+  border-style: solid;
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  height: 60%;
+}
+
+.shape {
+  background-color: blue;
+  height: 60px;
+  width: 100%;
+  color: blue;
+}
+.container {
+  display: inline-block;
+  align-items: center;
+  padding: 10px;
+}
+h2 {
+  margin-top: 0% auto;
+  padding: 10px;
+}
+#user {
+  height: 70px;
+  border-radius: 100%;
+  box-shadow: 2px 2px grey;
+}
+
+#u {
+  width: 10px;
+  padding: 10px;
+}
+u {
+  padding: 10px;
+  color: rgb(59, 185, 231);
+  text-decoration: underline;
+}
