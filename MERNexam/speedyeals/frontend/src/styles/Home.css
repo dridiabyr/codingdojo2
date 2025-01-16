@@ -1,0 +1,65 @@
+/* Home.css */
+.container {
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e53935;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  button[type="button"] {
+    padding: 5px 10px;
+    background-color: #ff9800;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #fb8c00;
+  }
+  
