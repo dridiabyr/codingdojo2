@@ -1,0 +1,15 @@
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\loopsproj\bin\Debug\net10.0\loopsproj.exe
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\loopsproj\bin\Debug\net10.0\loopsproj.deps.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\loopsproj\bin\Debug\net10.0\loopsproj.runtimeconfig.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\loopsproj\bin\Debug\net10.0\loopsproj.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\loopsproj\bin\Debug\net10.0\loopsproj.pdb
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\loopsproj\obj\Debug\net10.0\loopsproj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\loopsproj\obj\Debug\net10.0\loopsproj.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\loopsproj\obj\Debug\net10.0\loopsproj.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\loopsproj\obj\Debug\net10.0\loopsproj.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\loopsproj\obj\Debug\net10.0\loopsproj.sourcelink.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\loopsproj\obj\Debug\net10.0\loopsproj.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\loopsproj\obj\Debug\net10.0\refint\loopsproj.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\loopsproj\obj\Debug\net10.0\loopsproj.pdb
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\loopsproj\obj\Debug\net10.0\loopsproj.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\loopsproj\obj\Debug\net10.0\ref\loopsproj.dll
