@@ -1,0 +1,15 @@
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\debuggingPractice\obj\Debug\net10.0\debuggingPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\debuggingPractice\obj\Debug\net10.0\debuggingPractice.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\debuggingPractice\obj\Debug\net10.0\debuggingPractice.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\debuggingPractice\obj\Debug\net10.0\debuggingPractice.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\debuggingPractice\obj\Debug\net10.0\debuggingPractice.sourcelink.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\debuggingPractice\bin\Debug\net10.0\debuggingPractice.exe
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\debuggingPractice\bin\Debug\net10.0\debuggingPractice.deps.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\debuggingPractice\bin\Debug\net10.0\debuggingPractice.runtimeconfig.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\debuggingPractice\bin\Debug\net10.0\debuggingPractice.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\debuggingPractice\bin\Debug\net10.0\debuggingPractice.pdb
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\debuggingPractice\obj\Debug\net10.0\debuggingPractice.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\debuggingPractice\obj\Debug\net10.0\refint\debuggingPractice.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\debuggingPractice\obj\Debug\net10.0\debuggingPractice.pdb
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\debuggingPractice\obj\Debug\net10.0\debuggingPractice.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\debuggingPractice\obj\Debug\net10.0\ref\debuggingPractice.dll
