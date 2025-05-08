@@ -1,0 +1,15 @@
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\Puzzels\bin\Debug\net10.0\Puzzels.exe
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\Puzzels\bin\Debug\net10.0\Puzzels.deps.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\Puzzels\bin\Debug\net10.0\Puzzels.runtimeconfig.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\Puzzels\bin\Debug\net10.0\Puzzels.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\Puzzels\bin\Debug\net10.0\Puzzels.pdb
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\Puzzels\obj\Debug\net10.0\Puzzels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\Puzzels\obj\Debug\net10.0\Puzzels.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\Puzzels\obj\Debug\net10.0\Puzzels.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\Puzzels\obj\Debug\net10.0\Puzzels.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\Puzzels\obj\Debug\net10.0\Puzzels.sourcelink.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\Puzzels\obj\Debug\net10.0\Puzzels.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\Puzzels\obj\Debug\net10.0\refint\Puzzels.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\Puzzels\obj\Debug\net10.0\Puzzels.pdb
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\Puzzels\obj\Debug\net10.0\Puzzels.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\Puzzels\obj\Debug\net10.0\ref\Puzzels.dll
