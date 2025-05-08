@@ -1,0 +1,15 @@
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\directions\obj\Debug\net10.0\directions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\directions\obj\Debug\net10.0\directions.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\directions\obj\Debug\net10.0\directions.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\directions\obj\Debug\net10.0\directions.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\directions\obj\Debug\net10.0\directions.sourcelink.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\directions\bin\Debug\net10.0\directions.exe
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\directions\bin\Debug\net10.0\directions.deps.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\directions\bin\Debug\net10.0\directions.runtimeconfig.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\directions\bin\Debug\net10.0\directions.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\directions\bin\Debug\net10.0\directions.pdb
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\directions\obj\Debug\net10.0\directions.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\directions\obj\Debug\net10.0\refint\directions.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\directions\obj\Debug\net10.0\directions.pdb
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\directions\obj\Debug\net10.0\directions.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\directions\obj\Debug\net10.0\ref\directions.dll
