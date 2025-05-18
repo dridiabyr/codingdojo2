@@ -1,0 +1,15 @@
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\rideMader\obj\Debug\net10.0\rideMader.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\rideMader\obj\Debug\net10.0\rideMader.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\rideMader\obj\Debug\net10.0\rideMader.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\rideMader\obj\Debug\net10.0\rideMader.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\rideMader\obj\Debug\net10.0\rideMader.sourcelink.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\rideMader\bin\Debug\net10.0\rideMader.exe
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\rideMader\bin\Debug\net10.0\rideMader.deps.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\rideMader\bin\Debug\net10.0\rideMader.runtimeconfig.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\rideMader\bin\Debug\net10.0\rideMader.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\rideMader\bin\Debug\net10.0\rideMader.pdb
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\rideMader\obj\Debug\net10.0\rideMader.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\rideMader\obj\Debug\net10.0\refint\rideMader.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\rideMader\obj\Debug\net10.0\rideMader.pdb
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\rideMader\obj\Debug\net10.0\rideMader.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\rideMader\obj\Debug\net10.0\ref\rideMader.dll
