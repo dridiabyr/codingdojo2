@@ -1,0 +1,15 @@
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\MakeaDrink\obj\Debug\net10.0\MakeaDrink.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\MakeaDrink\obj\Debug\net10.0\MakeaDrink.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\MakeaDrink\obj\Debug\net10.0\MakeaDrink.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\MakeaDrink\obj\Debug\net10.0\MakeaDrink.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\MakeaDrink\obj\Debug\net10.0\MakeaDrink.sourcelink.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\MakeaDrink\bin\Debug\net10.0\MakeaDrink.exe
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\MakeaDrink\bin\Debug\net10.0\MakeaDrink.deps.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\MakeaDrink\bin\Debug\net10.0\MakeaDrink.runtimeconfig.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\MakeaDrink\bin\Debug\net10.0\MakeaDrink.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\MakeaDrink\bin\Debug\net10.0\MakeaDrink.pdb
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\MakeaDrink\obj\Debug\net10.0\MakeaDrink.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\MakeaDrink\obj\Debug\net10.0\refint\MakeaDrink.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\MakeaDrink\obj\Debug\net10.0\MakeaDrink.pdb
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\MakeaDrink\obj\Debug\net10.0\MakeaDrink.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\MakeaDrink\obj\Debug\net10.0\ref\MakeaDrink.dll
