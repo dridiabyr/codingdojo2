@@ -1,0 +1,24 @@
+@model List<string>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Word List </title>
+</head>
+
+<body>
+
+   <h2> Here are some delecious foods ! </h2>
+@foreach (var word in Model){
+    if (word.StartsWith("c")){
+        <p style=" color:red">@word</p>
+    }
+    else{
+        <p>@word</p>
+    }
+}
+</body>
+
+</html>
