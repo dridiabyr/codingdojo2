@@ -11,7 +11,10 @@ public class DojoSurveyController : Controller
     [HttpPost]
     public IActionResult Submit(string name, string location, string language, string comment)
     {
-
+        if (string.IsNullOrWhiteSpace(comment))
+        {
+            comment = "<span> No comment </span>";
+         }
 
         ViewBag.Name = name;
         ViewBag.Location = location;
