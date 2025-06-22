@@ -1,0 +1,46 @@
+﻿@model DojoSurveyModel.Models.Survey
+
+@{
+    ViewData["Title"] = "Dojo Survey";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Dojo Survey</h2>
+
+    <form asp-action="Submit" method="post" class="needs-validation">
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label">Your Name:</label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Location" class="form-label">Dojo Location:</label>
+            <select asp-for="Location" class="form-select">
+                <option>San Jose</option>
+                <option>Seattle</option>
+                <option>New York</option>
+                <option>Chicago</option>
+            </select>
+            <span asp-validation-for="Location" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Language" class="form-label">Favorite Language:</label>
+            <select asp-for="Language" class="form-select">
+                <option>C#</option>
+                <option>JavaScript</option>
+                <option>Python</option>
+                <option>Java</option>
+            </select>
+            <span asp-validation-for="Language" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Comment" class="form-label">Comment (optional):</label>
+            <textarea asp-for="Comment" class="form-control" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
