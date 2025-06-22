@@ -1,0 +1,10 @@
+@model DojoSurveyModelValid.Models.Survey
+
+<h2>Submitted Info</h2>
+
+<p><strong>Name:</strong> @Model.Name</p>
+<p><strong>Dojo Location:</strong> @Model.Location</p>
+<p><strong>Favorite Language:</strong> @Model.Language</p>
+<p><strong>Comment (optional):</strong> @(string.IsNullOrWhiteSpace(Model.Comment)? "No Comment provided " : Model.Comment) </p>
+
+<a href="/" class="btn btn-secondary">Go back</a>
