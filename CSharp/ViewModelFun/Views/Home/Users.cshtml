@@ -1,0 +1,16 @@
+
+@using ViewModelFun.Models
+@model List<User>
+
+<div class="Users">
+
+    <h2>Here is a List of Users</h2>
+    <div style="border: 1px solid black; padding: 10px; width: fit-content;">
+        <ul style="list-style: none; padding-left: 0;">
+            @foreach (var user in Model)
+            {
+                <li>@user.FirstName @user.LastName</li>
+            }
+        </ul>
+    </div>
+</div>

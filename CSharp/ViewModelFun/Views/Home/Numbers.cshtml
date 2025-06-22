@@ -1,0 +1,13 @@
+@model int[]
+
+<div class="numbers">
+
+
+    <h2>Here are some numbers</h2>
+<ul style="list-style: none;">
+    @foreach (var number in Model)
+    {
+        <li>@number</li>
+    }
+</ul>
+</div>
