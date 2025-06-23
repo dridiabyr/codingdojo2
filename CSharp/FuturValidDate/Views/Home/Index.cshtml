@@ -1,0 +1,23 @@
+﻿@model FuturValidDate.Models.User
+
+<h2>Enter Your Info</h2>
+
+<form asp-action="Submit" method="post">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Birthdate" class="form-label"></label>
+        <input asp-for="Birthdate" type="date" class="form-control" />
+        <span asp-validation-for="Birthdate" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
