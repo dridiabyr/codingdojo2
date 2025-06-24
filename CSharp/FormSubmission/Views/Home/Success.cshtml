@@ -1,0 +1,11 @@
+@model FormSubmission.Models.User
+
+<h2>Success!</h2>
+
+<p><strong>Name:</strong> @Model.Name</p>
+<p><strong>Email:</strong> @Model.Email</p>
+<p><strong>Date of Birth:</strong> @Model.DateOfBirth.ToShortDateString()</p>
+<p><strong>Password:</strong> (hidden)</p>
+<p><strong>Favorite Number:</strong> @Model.FavoriteNumber</p>
+
+<a href="/">Go Back</a>

@@ -1,0 +1,31 @@
+﻿@model FormSubmission.Models.User
+
+<form asp-action="Submit" method="post">
+    <div asp-validation-summary="All"></div>
+
+    <label>Name:</label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+
+    <label>Email:</label>
+    <input asp-for="Email" />
+    <span asp-validation-for="Email"></span>
+
+    <label>Date of Birth:</label>
+    <input asp-for="DateOfBirth" type="date" />
+    <span asp-validation-for="DateOfBirth"></span>
+
+    <label>Password:</label>
+    <input asp-for="Password" type="password" />
+    <span asp-validation-for="Password"></span>
+
+    <label>Favorite Number:</label>
+    <input asp-for="FavoriteNumber" />
+    <span asp-validation-for="FavoriteNumber"></span>
+
+    <button type="submit">Submit</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
