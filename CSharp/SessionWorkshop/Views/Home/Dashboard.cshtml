@@ -1,0 +1,14 @@
+<h2>Welcome @ViewBag.Name!</h2>
+
+<form asp-action="Logout" method="post" style="float:right">
+    <button type="submit">Log out</button>
+</form>
+
+<h1>@ViewBag.Count</h1>
+
+<form asp-action="Process" method="post">
+    <button name="action" value="+1">+1</button>
+    <button name="action" value="-1">-1</button>
+    <button name="action" value="x2">x2</button>
+    <button name="action" value="+random">+ Random</button>
+</form>

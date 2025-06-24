@@ -1,0 +1,9 @@
+﻿@model UserViewModel
+
+<h2>Welcome!</h2>
+<p>Please give your name:</p>
+
+<form asp-action="SubmitName" method="post">
+    <input asp-for="Name" required />
+    <button type="submit">Submit</button>
+</form>
