@@ -1,0 +1,10 @@
+<h2>Welcome, @ViewBag.UserName from @ViewBag.UserLocation!</h2>
+<h3>Your Passcode: @ViewBag.Passcode</h3>
+
+<form asp-action="NewCode" method="post">
+    <button type="submit">New Code</button>
+</form>
+
+<form asp-action="Logout" method="post">
+    <button type="submit">Log Out</button>
+</form>

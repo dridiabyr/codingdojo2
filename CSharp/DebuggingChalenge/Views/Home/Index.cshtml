@@ -1,0 +1,20 @@
+﻿@model DebuggingChalenge.Models.UserViewModel
+
+<h2>User Form</h2>
+
+<form asp-action="Submit" method="post">
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Location"></label>
+        <input asp-for="Location" />
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
