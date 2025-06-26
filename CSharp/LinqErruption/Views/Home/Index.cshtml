@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "Linq Volcano Eruption Queries";
+    var volcano = ViewBag;
+}
+
+<h1>Linq Volcano Queries</h1>
+
+<h2>🌋 First Chile Eruption</h2>
+<p>@volcano.Chile</p>
+
+<h2>🌴 First Hawaiian Eruption</h2>
+<p>@volcano.Hawaiian</p>
+
+<h2>❄️ Greenland Eruption</h2>
+<p>@volcano.Greenland</p>
+
+<h2>🇳🇿 New Zealand (after 1900)</h2>
+<p>@volcano.NewZealand</p>
+
+<h2>⛰️ Volcanoes over 2000m</h2>
+<ul>
+@foreach (var e in volcano.HighElevation)
+{
+    <li>@e</li>
+}
+</ul>
+
+<h2>🌋 Volcanoes starting with 'L'</h2>
+<p>Total: @volcano.StartsWithL.Count</p>
+<ul>
+@foreach (var e in volcano.StartsWithL)
+{
+    <li>@e</li>
+}
+</ul>
+
+<h2>📏 Highest Elevation</h2>
+<p>@volcano.MaxElevation</p>
+
+<h2>🌋 Volcano with Max Elevation</h2>
+<p>@volcano.VolcanoWithMax</p>
+
+<h2>🧾 Alphabetical Volcano List</h2>
+<ol>
+@foreach (var v in volcano.Alphabetical)
+{
+    <li>@v.Volcano</li>
+}
+</ol>
+
+<h2>📊 Total Elevation</h2>
+<p>@volcano.ElevationSum</p>
+
+<h2>🎇 Any Eruption in 2000?</h2>
+<p>@(volcano.AnyIn2000 ? "Yes" : "No")</p>
+
+<h2>🔥 First 3 Stratovolcanoes</h2>
+<ul>
+@foreach (var e in volcano.Top3Strato)
+{
+    <li>@e</li>
+}
+</ul>
+
+<h2>📜 Eruptions before 1000 CE (alphabetical)</h2>
+<ul>
+@foreach (var e in volcano.Before1000)
+{
+    <li>@e</li>
+}
+</ul>
+
+<h2>📝 Names only before 1000 CE</h2>
+<ul>
+@foreach (var name in volcano.NamesBefore1000)
+{
+    <li>@name</li>
+}
+</ul>
