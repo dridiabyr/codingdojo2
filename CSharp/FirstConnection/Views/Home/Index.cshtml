@@ -1,0 +1,9 @@
+﻿@model List<FirstConnection.Models.Pet>
+
+<h1>All Pets</h1>
+<ul>
+@foreach (var pet in Model)
+{
+    <li>@pet.Name (@pet.PetType) - Age: @pet.Age - Has Fur: @(pet.HasFur ? "Yes" : "No")</li>
+}
+</ul>
