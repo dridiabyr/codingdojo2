@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Plan a New Wedding";
+}
+
+<h2>Plan a New Wedding</h2>
+
+<form asp-controller="Wedding" asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="brideName">Bride's Name</label>
+        <input type="text" class="form-control" id="brideName" name="BrideName" required />
+    </div>
+    <div class="form-group">
+        <label for="groomName">Groom's Name</label>
+        <input type="text" class="form-control" id="groomName" name="GroomName" required />
+    </div>
+    <div class="form-group">
+        <label for="weddingDate">Wedding Date</label>
+        <input type="date" class="form-control" id="weddingDate" name="WeddingDate" required />
+    </div>
+    <button type="submit" class="btn btn-success mt-3">Submit</button>
+</form>
