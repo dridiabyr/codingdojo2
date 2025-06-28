@@ -1,0 +1,47 @@
+@model IEnumerable<Recipe>
+@using System.Linq
+
+@{
+    ViewData["Title"] = "All Recipes";
+    var myRatings = (List<Rating>)ViewBag.MyRatings ?? new List<Rating>();
+
+    // safely get UserId from session as nullable int
+    int? sessionUserId = Context.Session.GetInt32("UserId");
+}
+
+<h2>All Recipes</h2>
+
+<table border="1" cellpadding="5" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Created By</th>
+            <th>Average Rating</th>
+            <th>Your Rating</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var recipe in Model)
+        {
+            var avgRating = recipe.Ratings.Any() ? recipe.Ratings.Average(r => r.Score).ToString("0.0") : "No ratings";
+            var myRating = myRatings.FirstOrDefault(r => r.RecipeId == recipe.RecipeId)?.Score;
+
+            <tr>
+                <td>@recipe.Title</td>
+                <td>@recipe.Creator.FirstName @recipe.Creator.LastName</td>
+                <td>@avgRating</td>
+                <td>@(myRating.HasValue ? myRating.ToString() : "Not rated")</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@recipe.RecipeId">Details</a> |
+                    @if (sessionUserId.HasValue && recipe.UserId == sessionUserId.Value)
+                    {
+                        <a asp-action="Edit" asp-route-id="@recipe.RecipeId">Edit</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p><a asp-action="New">Create New Recipe</a></p>

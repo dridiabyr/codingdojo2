@@ -1,0 +1,66 @@
+@model Reciepes.Models.Recipe
+
+@{
+    ViewData["Title"] = "Recipe Details";
+    var myRating = (Rating)ViewBag.MyRating;
+    var avgRating = Model.Ratings.Any() ? Model.Ratings.Average(r => r.Score).ToString("0.0") : "No ratings yet";
+}
+
+<h2>@Model.Title</h2>
+
+<p><strong>Created by:</strong> @Model.Creator.FirstName @Model.Creator.LastName</p>
+
+<h3>Ingredients</h3>
+<ul>
+    <li>@Model.Ingredient1</li>
+    <li>@Model.Ingredient2</li>
+    <li>@Model.Ingredient3</li>
+    <li>@Model.Ingredient4</li>
+    <li>@Model.Ingredient5</li>
+</ul>
+
+<h3>Instructions</h3>
+<p>@Model.Instructions</p>
+
+<p><strong>Vegetarian:</strong> @(Model.Vegetarian ? "Yes" : "No")</p>
+<p><strong>Gluten Free:</strong> @(Model.GlutenFree ? "Yes" : "No")</p>
+
+<h3>Average Rating: @avgRating</h3>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <h4>Your Rating</h4>
+    <form asp-action="Rate" method="post">
+        <input type="hidden" name="id" value="@Model.RecipeId" />
+ <select name="score" required>
+    <option value="">-- Select rating --</option>
+    @for (int i = 1; i <= 5; i++)
+    {
+        if (myRating != null && myRating.Score == i)
+        {
+            <option value="@i" selected>@i</option>
+        }
+        else
+        {
+            <option value="@i">@i</option>
+        }
+    }
+</select>
+        <button type="submit">Submit Rating</button>
+    </form>
+}
+else
+{
+    <p><a asp-controller="Home" asp-action="Index">Log in</a> to rate this recipe.</p>
+}
+
+@if (Model.Ratings.Any())
+{
+    <h3>User Ratings</h3>
+    <ul>
+        @foreach(var rating in Model.Ratings)
+        {
+            <li>@rating.User.FirstName @rating.User.LastName rated: @rating.Score</li>
+        }
+    </ul>
+}

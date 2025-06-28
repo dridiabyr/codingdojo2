@@ -1,0 +1,65 @@
+@model Reciepes.Models.Recipe
+
+@{
+    ViewData["Title"] = "Create New Recipe";
+}
+
+<h2>Create New Recipe</h2>
+
+<form asp-controller="Recipe" asp-action="Create" method="post">
+    <div>
+        <label asp-for="Title"></label><br />
+        <input asp-for="Title" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="Ingredient1"></label><br />
+        <input asp-for="Ingredient1" />
+        <span asp-validation-for="Ingredient1" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="Ingredient2"></label><br />
+        <input asp-for="Ingredient2" />
+        <span asp-validation-for="Ingredient2" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="Ingredient3"></label><br />
+        <input asp-for="Ingredient3" />
+        <span asp-validation-for="Ingredient3" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="Ingredient4"></label><br />
+        <input asp-for="Ingredient4" />
+        <span asp-validation-for="Ingredient4" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="Ingredient5"></label><br />
+        <input asp-for="Ingredient5" />
+        <span asp-validation-for="Ingredient5" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="Instructions"></label><br />
+        <textarea asp-for="Instructions" rows="5" cols="40"></textarea>
+        <span asp-validation-for="Instructions" class="text-danger"></span>
+    </div>
+
+    <div>
+        <input asp-for="Vegetarian" type="checkbox" /> <label asp-for="Vegetarian"></label>
+    </div>
+
+    <div>
+        <input asp-for="GlutenFree" type="checkbox" /> <label asp-for="GlutenFree"></label>
+    </div>
+
+    <button type="submit">Create Recipe</button>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
