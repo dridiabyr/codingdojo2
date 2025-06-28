@@ -2,8 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Reciepes.Models;
 using Microsoft.AspNetCore.Http;
-using System.Linq;
 using Reciepes.Data;
+using System.Linq;
 
 namespace Reciepes.Controllers
 {
@@ -24,18 +24,20 @@ namespace Reciepes.Controllers
                 .Include(r => r.Ratings)
                 .ToList();
 
-            // Optional: get current user's ratings for display
             int? userId = HttpContext.Session.GetInt32("UserId");
             if (userId.HasValue)
             {
-                var myRatings = _context.Ratings.Where(r => r.UserId == userId.Value).ToList();
+                var myRatings = _context.Ratings
+                    .Where(r => r.UserId == userId.Value)
+                    .ToList();
                 ViewBag.MyRatings = myRatings;
             }
 
             return View(recipes);
         }
 
-         public IActionResult Details(int id)
+        // Show details of one recipe
+        public IActionResult Details(int id)
         {
             var recipe = _context.Recipes
                 .Include(r => r.User)
@@ -48,18 +50,20 @@ namespace Reciepes.Controllers
             return View(recipe);
         }
 
+        // GET: Show form to create a new recipe
         [HttpGet]
         public IActionResult New()
         {
             return View();
         }
 
+        // POST: Create the new recipe
         [HttpPost]
         public IActionResult Create(Recipe recipe)
         {
             int? userId = HttpContext.Session.GetInt32("UserId");
             if (!userId.HasValue)
-                return RedirectToAction("Index", "Home"); // not logged in
+                return RedirectToAction("Index", "Home"); // Not logged in
 
             if (ModelState.IsValid)
             {
@@ -68,28 +72,28 @@ namespace Reciepes.Controllers
                 _context.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View("New");
+
+            return View("New", recipe);
         }
 
-public IActionResult New()
-{
-    return View();
-}
+        // GET: Show form to edit a recipe
         [HttpGet]
         public IActionResult Edit(int id)
         {
             int? userId = HttpContext.Session.GetInt32("UserId");
             if (!userId.HasValue)
-                return RedirectToAction("Index", "Home"); // not logged in
+                return RedirectToAction("Index", "Home");
 
-            var recipe = _context.Recipes.FirstOrDefault(r => r.RecipeId == id && r.UserId == userId.Value);
+            var recipe = _context.Recipes
+                .FirstOrDefault(r => r.RecipeId == id && r.UserId == userId.Value);
+
             if (recipe == null)
                 return NotFound();
 
             return View(recipe);
         }
 
-
+        // POST: Update the recipe
         [HttpPost]
         public IActionResult Update(Recipe updatedRecipe)
         {
@@ -99,7 +103,9 @@ public IActionResult New()
 
             if (ModelState.IsValid)
             {
-                var recipe = _context.Recipes.FirstOrDefault(r => r.RecipeId == updatedRecipe.RecipeId && r.UserId == userId.Value);
+                var recipe = _context.Recipes
+                    .FirstOrDefault(r => r.RecipeId == updatedRecipe.RecipeId && r.UserId == userId.Value);
+
                 if (recipe == null)
                     return NotFound();
 
@@ -116,6 +122,7 @@ public IActionResult New()
                 _context.SaveChanges();
                 return RedirectToAction("Index");
             }
+
             return View("Edit", updatedRecipe);
         }
     }

@@ -1,57 +1,52 @@
 @model Reciepes.Models.Recipe
 
-<h2>Create New Recipe</h2>
+<h2>Create a New Recipe</h2>
 
 <form asp-action="Create" method="post">
     <div>
         <label asp-for="Title"></label>
         <input asp-for="Title" />
-        <span asp-validation-for="Title"></span>
+        <span asp-validation-for="Title" class="text-danger"></span>
     </div>
 
     <div>
         <label asp-for="Ingredient1"></label>
         <input asp-for="Ingredient1" />
-        <span asp-validation-for="Ingredient1"></span>
+        <span asp-validation-for="Ingredient1" class="text-danger"></span>
     </div>
+
     <div>
         <label asp-for="Ingredient2"></label>
         <input asp-for="Ingredient2" />
-        <span asp-validation-for="Ingredient2"></span>
     </div>
+
     <div>
         <label asp-for="Ingredient3"></label>
         <input asp-for="Ingredient3" />
-        <span asp-validation-for="Ingredient3"></span>
     </div>
+
     <div>
         <label asp-for="Ingredient4"></label>
         <input asp-for="Ingredient4" />
-        <span asp-validation-for="Ingredient4"></span>
     </div>
+
     <div>
         <label asp-for="Ingredient5"></label>
         <input asp-for="Ingredient5" />
-        <span asp-validation-for="Ingredient5"></span>
     </div>
 
     <div>
         <label asp-for="Instructions"></label>
         <textarea asp-for="Instructions"></textarea>
-        <span asp-validation-for="Instructions"></span>
+        <span asp-validation-for="Instructions" class="text-danger"></span>
     </div>
 
     <div>
-        <label asp-for="Vegetarian"></label>
-        <input asp-for="Vegetarian" type="checkbox" />
+        <label><input asp-for="Vegetarian" /> Vegetarian</label>
+        <label><input asp-for="GlutenFree" /> Gluten-Free</label>
     </div>
 
-    <div>
-        <label asp-for="GlutenFree"></label>
-        <input asp-for="GlutenFree" type="checkbox" />
-    </div>
-
-    <button type="submit">Create</button>
+    <button type="submit">Create Recipe</button>
 </form>
 
 @section Scripts {
