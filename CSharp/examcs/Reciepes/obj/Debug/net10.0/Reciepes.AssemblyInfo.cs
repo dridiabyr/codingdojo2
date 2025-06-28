@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Reciepes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b1ecbfa0c597ebad9fc91961848e481ded7334f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+723c740cc49d9d194934a9205bde850f5e45b5ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("Reciepes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Reciepes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

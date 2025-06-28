@@ -4,14 +4,14 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Reciepes.Models;
+using Reciepes.Data;
 
 #nullable disable
 
 namespace Reciepes.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20250627170633_InitialCreate")]
+    [Migration("20250628150249_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -26,11 +26,11 @@ namespace Reciepes.Migrations
 
             modelBuilder.Entity("Reciepes.Models.Rating", b =>
                 {
-                    b.Property<int>("RatingId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("RatingId"));
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("RecipeId")
                         .HasColumnType("int");
@@ -41,7 +41,10 @@ namespace Reciepes.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.HasKey("RatingId");
+                    b.Property<int>("Value")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
 
                     b.HasIndex("RecipeId");
 
@@ -110,6 +113,10 @@ namespace Reciepes.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("UserId"));
 
+                    b.Property<string>("ConfirmPassword")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -152,13 +159,13 @@ namespace Reciepes.Migrations
 
             modelBuilder.Entity("Reciepes.Models.Recipe", b =>
                 {
-                    b.HasOne("Reciepes.Models.User", "Creator")
-                        .WithMany("CreatedRecipes")
+                    b.HasOne("Reciepes.Models.User", "User")
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Creator");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Reciepes.Models.Recipe", b =>
@@ -168,8 +175,6 @@ namespace Reciepes.Migrations
 
             modelBuilder.Entity("Reciepes.Models.User", b =>
                 {
-                    b.Navigation("CreatedRecipes");
-
                     b.Navigation("Ratings");
                 });
 #pragma warning restore 612, 618

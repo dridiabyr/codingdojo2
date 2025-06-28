@@ -1,12 +1,11 @@
 @model IEnumerable<Recipe>
 @using System.Linq
+@inject IHttpContextAccessor HttpContextAccessor
 
 @{
     ViewData["Title"] = "All Recipes";
     var myRatings = (List<Rating>)ViewBag.MyRatings ?? new List<Rating>();
-
-    // safely get UserId from session as nullable int
-    int? sessionUserId = Context.Session.GetInt32("UserId");
+    int? sessionUserId = HttpContextAccessor.HttpContext?.Session.GetInt32("UserId");
 }
 
 <h2>All Recipes</h2>
@@ -22,14 +21,14 @@
         </tr>
     </thead>
     <tbody>
-        @foreach(var recipe in Model)
+        @foreach (var recipe in Model)
         {
-            var avgRating = recipe.Ratings.Any() ? recipe.Ratings.Average(r => r.Score).ToString("0.0") : "No ratings";
-            var myRating = myRatings.FirstOrDefault(r => r.RecipeId == recipe.RecipeId)?.Score;
+            var avgRating = recipe.Ratings.Any() ? recipe.Ratings.Average(r => r.Value).ToString("0.0") : "No ratings";
+            var myRating = myRatings.FirstOrDefault(r => r.RecipeId == recipe.RecipeId)?.Value;
 
             <tr>
                 <td>@recipe.Title</td>
-                <td>@recipe.Creator.FirstName @recipe.Creator.LastName</td>
+                <td>@recipe.User.FirstName @recipe.User.LastName</td>
                 <td>@avgRating</td>
                 <td>@(myRating.HasValue ? myRating.ToString() : "Not rated")</td>
                 <td>

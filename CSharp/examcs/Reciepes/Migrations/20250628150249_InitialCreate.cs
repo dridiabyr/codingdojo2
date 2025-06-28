@@ -27,6 +27,8 @@ namespace Reciepes.Migrations
                     Email = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Password = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    ConfirmPassword = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
@@ -75,15 +77,16 @@ namespace Reciepes.Migrations
                 name: "Ratings",
                 columns: table => new
                 {
-                    RatingId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Score = table.Column<int>(type: "int", nullable: false),
+                    RecipeId = table.Column<int>(type: "int", nullable: false),
                     UserId = table.Column<int>(type: "int", nullable: false),
-                    RecipeId = table.Column<int>(type: "int", nullable: false)
+                    Value = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Ratings", x => x.RatingId);
+                    table.PrimaryKey("PK_Ratings", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Ratings_Recipes_RecipeId",
                         column: x => x.RecipeId,
