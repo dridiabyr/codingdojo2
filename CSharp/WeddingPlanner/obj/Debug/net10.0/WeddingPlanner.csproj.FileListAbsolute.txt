@@ -1,0 +1,9 @@
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\WeddingPlanner\obj\Debug\net10.0\WeddingPlanner.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\WeddingPlanner\obj\Debug\net10.0\WeddingPlanner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\WeddingPlanner\obj\Debug\net10.0\WeddingPlanner.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\WeddingPlanner\obj\Debug\net10.0\WeddingPlanner.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\WeddingPlanner\obj\Debug\net10.0\WeddingPlanner.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\WeddingPlanner\obj\Debug\net10.0\WeddingPlanner.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\WeddingPlanner\obj\Debug\net10.0\WeddingPlanner.RazorAssemblyInfo.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\WeddingPlanner\obj\Debug\net10.0\WeddingPlanner.RazorAssemblyInfo.cs
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\WeddingPlanner\obj\Debug\net10.0\WeddingPlanner.sourcelink.json

@@ -9,13 +9,19 @@ function Home() {
     // Fetch meals from the backend
     axios.get('http://localhost:8000/api/meals')
       .then((res) => setMeals(res.data))
-      .catch((err) => console.error(err));
+      .catch((err) => console.error("Error fetching meals:", err));
   }, []);
 
   const deleteMeal = (id) => {
     axios.delete(`http://localhost:8000/api/meals/${id}`)
-      .then(() => setMeals(meals.filter((meal) => meal._id !== id)))
-      .catch((err) => console.error(err));
+      .then(() => {
+        // Use functional form to update meals to ensure state is updated properly
+        setMeals((prevMeals) => prevMeals.filter((meal) => meal._id !== id));
+      })
+      .catch((err) => {
+        console.error("Error deleting meal:", err);
+        // Optionally, you can show an error message to the user
+      });
   };
 
   return (

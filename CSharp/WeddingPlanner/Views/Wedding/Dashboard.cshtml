@@ -1,0 +1,29 @@
+@model List<Wedding>
+<h2>Welcome!</h2>
+<a href="/logout">Logout</a> | <a href="/weddings/new">Plan a Wedding</a>
+<table>
+    <thead>
+        <tr><th>Wedding</th><th>Date</th><th>Guests</th><th>Actions</th></tr>
+    </thead>
+    <tbody>
+    @foreach (var w in Model)
+    {
+        <tr>
+            <td>@w.WedderOne & @w.WedderTwo</td>
+            <td>@w.Date.ToShortDateString()</td>
+            <td>@w.Guests.Count</td>
+            <td>
+                <form method="post" asp-action="@(w.Guests.Any(g => g.UserId == Context.Session.GetInt32("UserId")) ? "UnRSVP" : "RSVP")" asp-route-id="@w.WeddingId">
+                    <button type="submit">@(w.Guests.Any(g => g.UserId == Context.Session.GetInt32("UserId")) ? "Un-RSVP" : "RSVP")</button>
+                </form>
+                @if (w.UserId == Context.Session.GetInt32("UserId"))
+                {
+                    <form method="post" asp-action="Delete" asp-route-id="@w.WeddingId">
+                        <button type="submit">Delete</button>
+                    </form>
+                }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

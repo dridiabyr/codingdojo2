@@ -27,10 +27,7 @@ namespace Reciepes.Controllers
         {
             return View();
         }
-public IActionResult New()
-{
-    return View();
-}
+
         [HttpPost]
         public IActionResult Register(User newUser)
         {

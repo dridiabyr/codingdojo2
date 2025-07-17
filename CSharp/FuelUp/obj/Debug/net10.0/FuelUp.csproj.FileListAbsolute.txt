@@ -1,0 +1,15 @@
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\FuelUp\obj\Debug\net10.0\FuelUp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\FuelUp\obj\Debug\net10.0\FuelUp.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\FuelUp\obj\Debug\net10.0\FuelUp.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\FuelUp\obj\Debug\net10.0\FuelUp.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\FuelUp\obj\Debug\net10.0\FuelUp.sourcelink.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\FuelUp\bin\Debug\net10.0\FuelUp.exe
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\FuelUp\bin\Debug\net10.0\FuelUp.deps.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\FuelUp\bin\Debug\net10.0\FuelUp.runtimeconfig.json
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\FuelUp\bin\Debug\net10.0\FuelUp.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\FuelUp\bin\Debug\net10.0\FuelUp.pdb
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\FuelUp\obj\Debug\net10.0\FuelUp.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\FuelUp\obj\Debug\net10.0\refint\FuelUp.dll
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\FuelUp\obj\Debug\net10.0\FuelUp.pdb
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\FuelUp\obj\Debug\net10.0\FuelUp.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\codingdojo2\CSharp\FuelUp\obj\Debug\net10.0\ref\FuelUp.dll

@@ -8,10 +8,10 @@ const createUser = () => {
   const user = {
     password: faker.internet.password(),
     email: faker.internet.email(),
-    phoneNumber: faker.phone.number(), // Corrected here
+    phoneNumber: faker.phone.number(), // Changed to phone.number
     lastName: faker.name.lastName(),
     firstName: faker.name.firstName(),
-    _id: faker.datatype.uuid(),
+    _id: faker.datatype.uuid(), // Ensure this is correct in the latest version
   };
   return user;
 };
@@ -19,7 +19,7 @@ const createUser = () => {
 // Function to create a random company
 const createCompany = () => {
   const company = {
-    _id: faker.datatype.uuid(),
+    _id: faker.datatype.uuid(), // Ensure this is correct in the latest version
     name: faker.company.companyName(),
     address: {
       street: faker.address.streetAddress(),

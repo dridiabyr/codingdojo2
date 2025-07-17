@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSNN Sports Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Live Scores Bar -->
+  <div class="live-scores">
+    <span>Live Scores</span>
+    <div class="scores">
+      <span>SJC Ninjas - 314</span> <span>CHI Samurai - 0</span> <span>BOS Hackers - 13</span> <span>BOI Knights - 5</span>
+      <span>NS Pirates - 159</span> <span>TUL Wizards - 0</span> <span>TYO Youkai - 37</span> <span>SEA Sea Lions - 11</span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <span>DSNN</span>
+    </div>
+    <div class="menu">
+      <span>Football</span>
+      <span>Basketball</span>
+      <span>Baseball</span>
+      <span>Soccer</span>
+      <span>More...</span>
+    </div>
+    <div class="icons">
+      <span><img src="C:\Users\ASUS\Desktop\codingdojo2\exam\dsnn\assets\search-light.png" ></span>
+      <span><img src="C:\Users\ASUS\Desktop\codingdojo2\exam\dsnn\assets\hamburger-light.png" ></span>
+      <span><img src="C:\Users\ASUS\Desktop\codingdojo2\exam\dsnn\assets\user-circle-light.png" ></span>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    
+    <div class="sidebar">
+      <div class="top-stories">
+        <h3>Top Stories</h3>
+        <hr>
+        <p>Ninjas up big in 5th</p>
+        <p>Best sports cities</p>
+        <p>Choi joins Hall of Fame</p>
+        <p>Tournament underway</p>
+        <p>Samurai at Wizards...</p>
+      </div>
+      <div class="customize">
+        <p>Customize your DSNN</p>
+        <button class="sign-in">Sign In</button>
+        <button class="sign-up">Sign Up</button>
+      </div>
+      <div class="subscribe">
+        <p>Never miss a play</p>
+        <button class="subscribe-btn" onclick="hide(this)">Subscribe</button>
+      </div>
+    </div>
+
+    <!-- Live Game Section -->
+    <div class="live-game">
+      <p class="live-text">● Live</p>
+      <h2>Ninjas Leading Pirates</h2>
+      <div class="teams">
+        <div class="team">
+          <img src="C:\Users\ASUS\Desktop\codingdojo2\exam\dsnn\assets\sjc-ninjas.png" alt="Ninjas Logo">
+          <p>San Jose <span class="team-name">Ninjas</span></p>
+          <p>(10 W - 3 L)</p>
+        </div>
+        <p class="vs">VS</p>
+        <div class="team">
+          <img src="C:\Users\ASUS\Desktop\codingdojo2\exam\dsnn\assets\ns-pirates.png" alt="Pirates Logo">
+          <p>Nova Scotia <span class="team-name">Pirates</span></p>
+          <p>(12 W - 2 L)</p>
+        </div>
+      </div>
+      <div class="score">
+        <span class="ninjas-score" onclick="score(this)">314</span>
+        <span class="pirates-score" onclick="score(this)">159</span>
+      </div>
+      <p class="description">A conservative match between the two top-performing sides in the Central League Division with a number 1 seed at stake... <a href="#">get live updates</a></p>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>

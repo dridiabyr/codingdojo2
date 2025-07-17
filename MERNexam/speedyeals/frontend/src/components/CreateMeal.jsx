@@ -13,36 +13,35 @@ function CreateMeal() {
   const [errors, setErrors] = useState({});
   const navigate = useNavigate();
 
-  // Helper function to validate fields
+  // Simple validation function for required fields
   const validateField = (name, value) => {
     if (!value) {
       return `${name} is required`;
     }
-    if (value.length < 3) {
+    if (name === 'name' && value.length < 3) {
       return `${name} must be at least 3 characters`;
     }
     return '';
   };
 
-  // Handle changes for regular fields
+  // Handle regular input field changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
 
-    // Real-time validation for regular fields
+    // Real-time validation
     setErrors((prevErrors) => ({
       ...prevErrors,
       [name]: validateField(name, value),
     }));
   };
 
-  // Handle changes for ingredients
+  // Handle ingredient input changes
   const handleIngredientChange = (index, value) => {
     const newIngredients = [...formData.ingredients];
     newIngredients[index] = value;
     setFormData({ ...formData, ingredients: newIngredients });
 
-    // Real-time validation for ingredients
     setErrors((prevErrors) => ({
       ...prevErrors,
       ingredients: formData.ingredients.map((ingredient) =>
@@ -51,7 +50,7 @@ function CreateMeal() {
     }));
   };
 
-  // Add a new ingredient field
+  // Add an ingredient field
   const addIngredientField = () => {
     setFormData({ ...formData, ingredients: [...formData.ingredients, ''] });
   };
@@ -67,7 +66,7 @@ function CreateMeal() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validate all fields before submitting
+    // Validate all fields
     const newErrors = {};
     newErrors.name = validateField('Name', formData.name);
     newErrors.cookTime = validateField('Cook Time', formData.cookTime);
@@ -78,23 +77,33 @@ function CreateMeal() {
 
     setErrors(newErrors);
 
-    // If no errors, submit the form
     if (Object.values(newErrors).every((error) => !error)) {
+      const mealData = {
+        name: formData.name,
+        cookTime: formData.cookTime,
+        directions: formData.directions,
+        ingredients: formData.ingredients.filter((ingredient) => ingredient.trim() !== ''),
+      };
+
+      console.log('Submitting form data:', mealData);
+
+      // POST request to backend
       axios
-        .post('http://localhost:8000/api/meals', formData)
-        .then(() => {
-          navigate('/');
+        .post('http://localhost:8000/api/meals', mealData)
+        .then((response) => {
+          console.log('Meal created successfully:', response.data);
+          navigate('/'); // Redirect after successful submission
         })
-        .catch((err) => setErrors(err.response.data.errors || {}));
+        .catch((err) => {
+          console.error('Error creating meal:', err);
+          setErrors(err.response?.data?.errors || {});
+        });
     }
   };
 
-  // Check if form is valid for submission
-  const isFormValid = Object.values(errors).every((error) => !error);
-
   return (
     <div>
-      <h2>Add the next culinary masterpiece!</h2>
+      <h2>Add a Meal</h2>
       <form onSubmit={handleSubmit}>
         <label>
           Dish Name:
@@ -151,8 +160,8 @@ function CreateMeal() {
           </button>
         </label>
 
-        <button type="submit" disabled={!isFormValid}>
-          Create
+        <button type="submit" disabled={Object.values(errors).some((err) => err)}>
+          Create Meal
         </button>
       </form>
     </div>

@@ -52,9 +52,9 @@ class Program
             }
         }
         //question 6
-       int j = 1; 
+        int j = 1;
 
-        while (j <= 100) 
+        while (j <= 100)
         {
             if (j % 3 == 0 && j % 5 == 0)
             {
@@ -69,9 +69,9 @@ class Program
                 Console.WriteLine("Buzz " + j);
             }
 
-            j++; 
+            j++;
         }
-
+       
     }
 
 }

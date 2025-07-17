@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Puzzels")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc0b087dc4a18b6b095f1bb598367a2b14831adf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d548009381b63fb8405c63e96cdbabf9b09ed6b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Puzzels")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Puzzels")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
