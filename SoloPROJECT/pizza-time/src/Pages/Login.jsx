@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -14,20 +14,23 @@ function Login() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
       });
+
       const data = await res.json();
 
       if (res.ok) {
-      
-        localStorage.setItem('token', data.token);
-        localStorage.setItem('username', data.username);
+        // Ensure user info exists in response
+        const userToSave = data.user 
+          ? data.user 
+          : { username: data.username, email: data.email };
 
-        
-        navigate('/dashboard');
+        localStorage.setItem('user', JSON.stringify(userToSave));
+        navigate('/account');
       } else {
-        alert(data.error);
+        alert(data.error || 'Login failed');
       }
     } catch (error) {
       console.error('Login error:', error);
+      alert('Server error. Please try again later.');
     }
   };
 
