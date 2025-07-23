@@ -1,0 +1,181 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8; /* Softer background color */
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Smooth scroll & transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease, transform 0.3s ease; /* Added transform for hover effect */
+}
+
+a:hover {
+  color: #ff5722;
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Header */
+header {
+  background-color: #ff5722;
+  color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  border-radius: 12px; /* Rounded corners */
+}
+
+header h1 {
+  font-size: 2rem; /* Increased font size */
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem; /* Increased gap */
+  margin-top: 0.5rem;
+}
+
+nav a {
+  font-weight: 500;
+  font-size: 1.1rem; /* Slightly larger font size */
+  padding: 0.4rem 0.8rem; /* Increased padding */
+  border-radius: 8px; /* Rounded corners */
+  transition: background 0.3s, transform 0.3s; /* Added transform for hover effect */
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Main wrapper */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+/* Page container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  background: #ffffff;
+  padding: 2.5rem; /* Increased padding */
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Increased gap */
+}
+
+form input,
+form select {
+  padding: 0.8rem 1.2rem; /* Increased padding */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+}
+
+form input:focus,
+form select:focus {
+  border-color: #ff5722;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 87, 34, 0.5); /* Subtle glow effect */
+}
+
+form button {
+  padding: 1rem; /* Increased padding */
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s; /* Added transform for hover effect */
+}
+
+form button:hover {
+  background-color: #e64a19;
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Cards */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Enhanced shadow */
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s; /* Added transition for hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Pizza images */
+.pizza-card img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* Footer (optional) */
+footer {
+  text-align: center;
+  padding: 1.5rem; /* Increased padding */
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid #eee;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 0.8rem;
+    flex-wrap: wrap;
+    gap: 0.8rem; /* Increased gap */
+  }
+
+  .container {
+    padding: 1.5rem; /* Increased padding */
+  }
+
+  form button {
+    width: 100%;
+  }
+}
